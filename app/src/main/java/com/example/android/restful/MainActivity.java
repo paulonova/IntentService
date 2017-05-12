@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(getApplicationContext()).unregisterReceiver(mBroadcastReceiver);
     }
 
+    //Button listener...
     public void runClickHandler(View view) {
         Intent intent = new Intent(this, MyService.class);
         intent.setData(Uri.parse(JSON_URL));
